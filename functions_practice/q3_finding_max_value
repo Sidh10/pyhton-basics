@@ -1,0 +1,19 @@
+def func(x,y):
+    if x>y :
+        return x
+    else :
+        return y
+b = func(9,10)
+print(b)
+
+#better version
+
+def find_max(*args):
+    if not args:
+        return "No values passed"
+    
+    max_val = args[0]
+    for num in args:
+        if num > max_val:
+            max_val = num
+    return max_val
