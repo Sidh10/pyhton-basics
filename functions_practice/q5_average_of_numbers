@@ -1,0 +1,5 @@
+def func(*x) :
+    y = sum(x)/len(x)
+    return y
+b = func(4,5,7,65,78,34,65,98)
+print(b)
