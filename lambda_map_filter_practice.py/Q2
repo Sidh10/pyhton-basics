@@ -1,0 +1,6 @@
+from functools import reduce
+a = input("Enter numbers with space :")
+a = a.split()
+a = list(map(int,a))
+product = reduce(lambda x,y : x*y , a)
+print(product)
