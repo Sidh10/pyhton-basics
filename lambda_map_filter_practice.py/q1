@@ -1,0 +1,6 @@
+a = (input("Enter numbers with spaces :"))
+a = a.split()
+a = list(map(int , a))
+b = list(map(lambda x : x**2 ,a))
+c = list(filter(lambda x : x%2 == 0 , b))
+print(c)
