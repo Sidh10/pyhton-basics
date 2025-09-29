@@ -1,0 +1,45 @@
+class Student:
+    def __init__(self,name,roll_no,marks):
+        self.name = name
+        self.roll_no = roll_no
+        self.marks = marks
+    def calculate_grade(self):
+        if self.marks >= 80 :
+            return "A" 
+        elif 60<= self.marks <80   :
+            return 'B' 
+        else :
+            return 'C'  
+    def display_info(self):
+        print(f"Name : {self.name}")
+        print(f"Roll no : {self.roll_no}")
+        print(f"Marks : {self.marks}")
+        print(f"Grades : {self.calculate_grade}")
+               
+       
+s1 = Student('Sidh', 46 , 83)     
+s1.display_info()
+
+#with __str__
+
+class Student:
+    def __init__(self,name,roll_no,marks):
+        self.name = name
+        self.roll_no = roll_no
+        self.marks = marks
+    def calculate_grade(self):
+        if self.marks >= 80 :
+            return "A" 
+        elif 60<= self.marks <80   :
+            return 'B' 
+        else :
+            return 'C'  
+    def __str__(self):
+       return (f"Name : {self.name}\n"
+              f"Roll no : {self.roll_no}\n" 
+              f"Marks : {self.marks}\n"
+              f"Grades : {self.calculate_grade()}")
+               
+       
+s1 = Student('Sidh', 46 , 83)     
+print(s1)  
