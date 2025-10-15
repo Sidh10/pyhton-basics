@@ -3,7 +3,7 @@ class Vehicle:
         self.brand = brand
         self.model = model
         self.year = year
-    def start_engine():
+    def start_engine(self):
         print("Engine Started")
     def display_info(self):
         print(f"Car brand: {self.brand}")    
